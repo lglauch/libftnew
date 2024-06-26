@@ -6,7 +6,7 @@
 /*   By: lglauch <lglauch@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 14:57:17 by lglauch           #+#    #+#             */
-/*   Updated: 2024/02/05 15:58:20 by lglauch          ###   ########.fr       */
+/*   Updated: 2024/06/26 14:28:06 by lglauch          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <stdio.h>
+# include "../ft_malloc/ft_malloc.h"
+
+# define malloc malloc_t_bad
+# define free free_t
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
